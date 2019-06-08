@@ -1,0 +1,13 @@
+{
+  "name": "@jitl/cli",
+  "version": "0.1.0",
+  "description": "Straightforward and typesafe command-line argument parsing with subcoommands.",
+  "main": "index.js",
+  "repository": "https://github.com/justjake/ts-cli",
+  "author": "Jake Teton-Landis <just.1.jake@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "typescript": "^3.5.1"
+  }
+}
