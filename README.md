@@ -98,10 +98,28 @@ For now, you'll need to read the code.
 ## Known Deficiencies 
 
 - Design modifications for the `Command` interface to allow nesting subcommands
-  easily without custom code.
+  easily without custom code. Currently, because we throw if an unknown flag is
+  given, a standard CLI command cannot dispatch to subcommands unless they both
+  share the same flags.
+
+  An elegant design would allow for arbitrary nesting of commands and subcommand
+  loaders.
+
 - The current `validate: Validator<T>` interface is not introspectable at runtime,
   which limits the usefulness and accuracy of help messages for an argument.
   All we can show to guide the user is the default value.
-- Tests. Ah, tests.
-- Documentation. It should be auto-generated from TSDoc comments in the source.
+
+  A usable system should be able to infer specific syntax based on the type of
+  the flag.
+
+- Documentation.
+
+  It should be auto-generated from TSDoc comments in the source.
+
 - Examples for subcommands.
+  
+  This should go in the ./examples directory.
+
+- Tests.
+
+  Ah, tests.
