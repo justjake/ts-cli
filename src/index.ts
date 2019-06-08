@@ -44,7 +44,7 @@ interface PromptArgs {
 	 */
 	inquirer: typeof import("inquirer")
 	/**
-	 * An inqirer prompt function.
+	 * An inquirer prompt function.
 	 * Usage: `await prompt([question])`
 	 */
 	prompt: import("inquirer").PromptModule

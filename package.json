@@ -1,7 +1,7 @@
 {
   "name": "@jitl/cli",
   "version": "0.1.0",
-  "description": "Straightforward and typesafe command-line argument parsing with subcoommands.",
+  "description": "Straightforward and typesafe command-line argument parsing with subcommands.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "https://github.com/justjake/ts-cli",
@@ -9,6 +9,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "prepare": "npm run build",
+    "clean": "rm -rf ./dist ./tmp",
     "build": "tsc -p ./tsconfig.json"
   },
   "engines": {
@@ -18,10 +20,10 @@
     "@types/fs-extra": "^7.0.0",
     "@types/inquirer": "^6.0.3",
     "@types/table": "^4.0.5",
+    "@types/minimist": "^1.2.0",
     "typescript": "^3.5.1"
   },
   "dependencies": {
-    "@types/minimist": "^1.2.0",
     "chalk": "^2.4.2",
     "fs-extra": "^8.0.1",
     "inquirer": "^6.3.1",
